@@ -2,9 +2,18 @@
 
 A simple landing page created with html and css
 
-## Credits
+## Screenshot
 
-- [The Odin Project](https://www.theodinproject.com/)
+![screenshot of the page](./images/final-landpage-screenshot.png)
+
+## Acknowledgements
+
+- Project idea and design by [The Odin Project](https://www.theodinproject.com/)
+- Illustration by [undraw](https://undraw.co/)
+
+## Author
+
+- [Sergio García](https://github.com/sergiogarciiam)
 
 ## License
 
