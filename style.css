@@ -10,25 +10,31 @@ body {
 }
 
 .page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   margin: 0px auto;
 }
 
 /* HEADER */
-.header,
-.section1 {
+.header {
   width: 100%;
-  padding: 20px 400px 100px 400px;
+  padding: 20px 0 100px 0;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   background-color: #1f2937;
   color: #f9faf8;
+
+  grid-area: header;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 .nav {
@@ -47,12 +53,27 @@ body {
 }
 
 /* SECTION 1 */
+.section1 {
+  width: 100%;
+  padding: 20px 0 100px 0;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
 .section1-image {
   height: 350px;
 }
 
 .text-section {
-  margin-right: 100px;
+  max-width: 700px;
 
   display: flex;
   flex-direction: column;
@@ -86,15 +107,15 @@ body {
 }
 
 /* SECTION 2 */
-.section2,
-.section3 {
+.section2 {
   width: 100%;
-  padding: 50px 400px 100px 400px;
+  padding: 50px 0 100px 0;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 
   background-color: #f9faf8;
   color: #1f2937;
@@ -108,8 +129,9 @@ body {
 .images-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 
+  flex-wrap: wrap;
   font-weight: bold;
 }
 
@@ -122,37 +144,49 @@ body {
 }
 
 .individual-image-container > p {
+  max-width: 250px;
   margin: 10px 50px 0px 50px;
   text-align: center;
 }
 
 /* SECTION 3 */
 .section3 {
-  padding: 100px 400px 100px 500px;
+  width: 100%;
+  padding: 100px 0 100px 0;
 
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  color: #1f2937;
   background-color: #e5e7eb;
 }
 
 .quote {
   font-size: 36px;
+  max-width: 1000px;
   font-weight: lighter;
   color: #1f2937;
 }
 
 .quote-author {
-  align-self: flex-end;
+  margin-left: 1000px;
   font-weight: bolder;
 }
 
 /* SECTION 4 */
 .section4 {
-  width: 50%;
+  max-width: 1000px;
   padding: 50px 100px;
   margin: 80px auto;
 
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
 
   background-color: #3882f6;
   color: #e5e7eb;
@@ -170,6 +204,7 @@ body {
 
 /* FOOTER */
 .footer {
+  width: 100%;
   padding: 20px 0;
   background-color: #1f2937;
   text-align: center;
@@ -186,4 +221,29 @@ body {
 
 .footer a:hover {
   color: #3882f6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .sign-button {
+    align-self: center;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  .quote {
+    text-align: center;
+  }
+
+  .quote-author {
+    margin-left: 0;
+  }
+
+  .section4 {
+    text-align: center;
+    padding: 25px 50px;
+    gap: 20px;
+  }
 }

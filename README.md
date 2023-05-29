@@ -13,7 +13,7 @@ A simple landing page created with html and css
 
 ## Author
 
-- [Sergio García](https://github.com/sergiogarciiam)
+[Sergio García](https://github.com/sergiogarciiam)
 
 ## License
 
